@@ -146,8 +146,9 @@ button,a{-webkit-tap-highlight-color:transparent}
   .hero-academy-strip strong{font-size:15px}
   .mini-links{gap:8px;margin-top:18px;font-size:11px;flex-wrap:wrap}
 
-  .hero-visual{min-height:430px;margin-left:-4px;margin-right:-4px}
-  .photo-frame{width:min(82vw,310px);padding:8px;transform:rotate(1.2deg)}
+  /* Mobile hero: keep the Brighter Brainz badge below the photo frame so it never overlaps the bottom caption. */
+  .hero-visual{display:block;min-height:auto;margin-left:-4px;margin-right:-4px;padding:10px 0 8px}
+  .photo-frame{width:min(82vw,310px);padding:8px;transform:rotate(1.2deg);margin:0 auto}
   .photo-frame img{height:min(390px,105vw);object-position:center top}
   .photo-label{top:18px;left:18px;font-size:7px;padding:6px 7px}
   .photo-bottom{padding:12px 5px 3px}
@@ -156,8 +157,8 @@ button,a{-webkit-tap-highlight-color:transparent}
   .arrow{font-size:20px}
   .orb-one{width:230px;height:230px;right:-15px;top:20px}
   .orb-two{width:220px;height:220px;left:-20px;bottom:10px}
-  .floating-card{left:2px;bottom:7px;padding:8px 11px 8px 8px;gap:9px;max-width:190px}
-  .floating-card img{width:39px;height:39px}
+  .floating-card{position:relative;left:auto;bottom:auto;margin:18px auto 0;width:max-content;max-width:calc(100% - 18px);padding:8px 11px 8px 8px;gap:9px;transform:none}
+  .floating-card img{width:39px;height:39px;flex:0 0 39px}
   .floating-card small{font-size:7px}
   .floating-card strong{font-size:11px}
 
@@ -255,8 +256,8 @@ button,a{-webkit-tap-highlight-color:transparent}
   h1{font-size:42px}
   .photo-frame{width:270px}
   .photo-frame img{height:350px}
-  .hero-visual{min-height:400px}
-  .floating-card{max-width:175px}
+  .hero-visual{min-height:auto}
+  .floating-card{max-width:175px;margin-top:16px}
   .bb-top h2{font-size:34px}
   .bb-logo{width:58px;height:58px;flex-basis:58px}
   .bb-feature img{height:245px}
